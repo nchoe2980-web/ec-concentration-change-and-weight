@@ -168,7 +168,7 @@ with tab3:
 
     # 핵심 결과 카드
     best_row = gs_df.loc[gs_df['생중량(g)'].idxmax()]
-    st.success(f"🥇 **분석 결과:** EC **{best_row['EC']}**({best_row['학교']}) 조건에서 평균 생중량 **{best_row['생중량(g)封']:.2f}g**으로 가장 우수한 성장을 보였습니다.")
+   st.success(f"🥇 **분석 결과:** EC **{best_row['EC']}**({best_row['학교']}) 조건에서 평균 생중량 **{best_row['생중량(g)']:.2f}g**으로 가장 우수한 성장을 보였습니다.")
 
     # 2x2 생육 지표 비교
     fig_growth = make_subplots(rows=2, cols=2, subplot_titles=("평균 생중량(g) ⭐", "평균 잎 수(장)", "평균 지상부 길이(mm)", "실험 개체수"))
